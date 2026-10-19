@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>上川町郷土資料館・ふる里たいせつ館｜約7000点の郷土資料を無料で</title>
+<meta name="description" content="北海道上川町の120年以上の歴史を伝える約7000点の郷土資料を、入館無料で観覧できる資料館。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#16241f; --pine2:#20332c; --gold:#b8955a; --gold-soft:#d6bd8c;
+  --paper:#e8e4d8; --ink:#1d1f1c; --muted:#5c5f55; --line:#c9c2ae;
+  --serif:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#1a211d; --ink:#e7e3d6; --muted:#a6a99c; --line:#37423a; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:2;font-size:16px;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(24px,4vw,34px);line-height:1.5;letter-spacing:.12em}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--pine);color:#f1ead9;display:flex;align-items:center;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:#2a3a33 url("images/image1.jpg") center/cover no-repeat;filter:sepia(.45) saturate(.8) brightness(.55)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,36,31,.92) 0%,rgba(22,36,31,.35) 70%)}
+.hero .wrap{position:relative;z-index:1;display:flex;gap:40px;align-items:flex-start;justify-content:flex-start;padding-top:72px;padding-bottom:72px;width:100%}
+.vtitle{writing-mode:vertical-rl;font-family:var(--serif);font-weight:800;font-size:clamp(36px,min(8vw,8vh),84px);letter-spacing:.25em;line-height:1.3;white-space:nowrap;flex-shrink:0;color:#f6efdd;animation:rise 1.4s ease both}
+.vsub{writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(15px,2.2vw,20px);letter-spacing:.3em;color:var(--gold-soft);margin-top:12px;white-space:nowrap;flex-shrink:0;animation:rise 1.4s .25s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-side{align-self:flex-end;margin-left:auto;max-width:340px}
+.hero-side p{font-size:15px;line-height:2;border-top:1px solid var(--gold);padding-top:18px}
+.btn{display:inline-block;font-family:var(--serif);font-weight:600;letter-spacing:.15em;text-decoration:none;padding:14px 32px;border:1px solid var(--gold);color:var(--gold-soft);transition:background .2s,color .2s}
+.btn:hover{background:var(--gold);color:var(--pine)}
+.btn.solid{background:var(--gold);color:var(--pine)}
+.btn.solid:hover{background:var(--gold-soft)}
+
+/* intro */
+section{padding:112px 0}
+.intro{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.intro h2{margin-bottom:8px}
+.intro p+p{margin-top:1.2em}
+.rule{width:56px;height:2px;background:var(--gold);margin:24px 0}
+
+/* highlight band */
+.band{background:var(--pine);color:#efe8d6;padding:96px 0}
+.band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.big{font-family:var(--serif);font-weight:800;font-size:clamp(56px,10vw,112px);line-height:1.1;color:var(--gold-soft);letter-spacing:.04em}
+.big small{font-size:.32em;letter-spacing:.2em;font-weight:600;margin-left:.3em}
+.band h2{margin-bottom:16px}
+.free{display:inline-block;margin-top:20px;border:1px solid var(--gold);padding:6px 20px;font-family:var(--serif);letter-spacing:.2em;color:var(--gold-soft)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:16px;margin-top:48px}
+.gallery figure{background:var(--pine2);overflow:hidden;min-height:220px}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;filter:sepia(.3) contrast(.95)}
+
+/* reviews */
+.reviews{background:color-mix(in srgb,var(--paper) 88%,#000)}
+.rv{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+blockquote{border-left:2px solid var(--gold);padding:8px 0 8px 28px}
+.stars{color:var(--gold);letter-spacing:.2em;font-size:18px}
+blockquote p{margin-top:8px}
+
+/* info */
+dl{margin-top:40px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:160px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
+dt{font-family:var(--serif);font-weight:600;letter-spacing:.15em;color:var(--gold)}
+dd a{color:inherit;text-underline-offset:4px;word-break:break-all}
+
+/* map */
+.map{margin-top:40px;aspect-ratio:16/9;background:var(--pine2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.mapbtn{text-align:center;margin-top:28px}
+.mapbtn .btn{color:var(--pine);background:var(--gold);padding:16px 44px}
+.mapbtn .btn:hover{background:var(--gold-soft)}
+
+footer{background:var(--pine);color:#cfc8b4;text-align:center;padding:48px 24px;font-size:14px;letter-spacing:.1em}
+footer strong{display:block;font-family:var(--serif);font-size:18px;color:#f1ead9;margin-bottom:8px;letter-spacing:.2em}
+
+@media (max-width:760px){
+  section{padding:80px 0}
+  .hero .wrap{flex-wrap:wrap;gap:20px}
+  .hero-side{margin-left:0;max-width:none}
+  .intro,.band .wrap,.rv{grid-template-columns:1fr;gap:32px}
+  .gallery{grid-template-columns:1fr;grid-template-rows:auto}
+  .gallery figure:first-child{grid-row:auto}
+  .row{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="bg" role="img" aria-label="上川町郷土資料館・ふる里たいせつ館の写真"></div>
+  <div class="wrap">
+    <h1 class="vtitle">ふる里たいせつ館</h1>
+    <p class="vsub">上川町郷土資料館</p>
+    <div class="hero-side">
+      <p>山あいのまちが歩んだ120年を、先人が大切に遺した約7000点の品々でたどる。入館は無料です。</p>
+      <p style="border:0;padding-top:20px"><a class="btn" href="#access">アクセスを見る</a></p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap intro">
+    <div>
+      <h2>先人の暮らしを、<br>いまに手渡す館</h2>
+      <div class="rule"></div>
+    </div>
+    <div>
+      <p>上川町が歩んできた120年にわたる歴史のなかで、先人が残した資料を後世へ引き継ぐために、町が主体となって設けた施設です。平成29年4月に開館しました。</p>
+      <p>地域の歴史・風土・文化にまつわる資料をたっぷりと展示。郷土の自然やアイヌ文化まで、さまざまな角度から上川の成り立ちを伝えています。</p>
+      <p>昔の人はモノを大事にしました。だからこそ、幼いころの記憶を呼び起こす品に出会えるかもしれません。</p>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div class="big">7000<small>点</small></div>
+    <div>
+      <h2>120年以上の歴史を、<br>ひとつの館で</h2>
+      <p>明治から続く郷土資料を、ゆっくり見て回れます。</p>
+      <span class="free">入館無料</span>
+    </div>
+  </div>
+</div>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>館内の風景</h2>
+    <div class="gallery">
+      <figure><img src="images/image1.jpg" alt="上川町郷土資料館・ふる里たいせつ館の外観または展示風景" loading="lazy"></figure>
+      <figure><img src="images/image2.jpg" alt="館内に並ぶ郷土資料" loading="lazy"></figure>
+      <figure><img src="images/image3.jpg" alt="展示されている資料" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="voice">
+  <div class="wrap">
+    <h2>訪れた方の声</h2>
+    <div class="rv">
+      <blockquote>
+        <div class="stars" aria-label="5点満点中5点">★★★★★</div>
+        <p>無料なのでバカにしてたら展示物多くて見ごたえありました〜！</p>
+      </blockquote>
+      <blockquote>
+        <div class="stars" aria-label="5点満点中5点">★★★★★</div>
+        <p>約7000点の展示物があります。昔の人はモノを大事にするので、幼少期の記憶のなんらかを思い起こすきっかけになる品は見つかるかもしれません。ここを訪れるべき理由としては、山間部の歴史をそのまま伝える貴重な館です。私は大雪を描いた油絵が一番良かった。</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="access">
+  <div class="wrap">
+    <h2>施設案内</h2>
+    <dl>
+      <div class="row"><dt>施設名</dt><dd>上川町郷土資料館・ふる里たいせつ館</dd></div>
+      <div class="row"><dt>住所</dt><dd>北海道上川郡上川町栄町49番地6</dd></div>
+      <div class="row"><dt>電話番号</dt><dd><a href="tel:0165821001">01658-2-1001</a></dd></div>
+      <div class="row"><dt>入館料</dt><dd>無料</dd></div>
+      <div class="row"><dt>定休日</dt><dd>日曜日・月曜日・祝日・年末年始</dd></div>
+      <div class="row"><dt>メール</dt><dd><a href="mailto:syakyou@town.hokkaido-kamikawa.lg.jp">syakyou@town.hokkaido-kamikawa.lg.jp</a></dd></div>
+      <div class="row"><dt>公式サイト</dt><dd><a href="https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/i8u8uo000000051o.html" target="_blank" rel="noopener">上川町ホームページの施設ページ</a></dd></div>
+    </dl>
+
+    <div class="map">
+      <iframe title="上川町郷土資料館・ふる里たいせつ館の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%8A%E5%B7%9D%E9%83%A1%E4%B8%8A%E5%B7%9D%E7%94%BA%E6%A0%84%E7%94%BA49%E7%95%AA%E5%9C%B06&hl=ja&z=16&output=embed"></iframe>
+    </div>
+    <div class="mapbtn">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%B5%B7%E9%81%93%E4%B8%8A%E5%B7%9D%E9%83%A1%E4%B8%8A%E5%B7%9D%E7%94%BA%E6%A0%84%E7%94%BA49%E7%95%AA%E5%9C%B06">Googleマップで開く</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>上川町郷土資料館・ふる里たいせつ館</strong>
+  北海道上川郡上川町栄町49番地6　／　01658-2-1001
+</footer>
+
+</body>
+</html>
